@@ -27,6 +27,7 @@ object AppModule {
         ).build()
     }
 
+
     @Provides
     @Singleton
     fun provideTodoDao(db : TodoDatabase):TodoDao = db.todoDao()
