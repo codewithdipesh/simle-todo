@@ -64,7 +64,7 @@ class MainViewModel @Inject constructor(
        todo = todo.copy(task = newValue)
     }
 
-    fun updateIsImportant(){
+    fun toggleImportant(){
         todo =todo.copy(isImportant =  !todo.isImportant)
     }
 
