@@ -14,7 +14,7 @@ class TodoRepository(
 
     suspend fun  getTodoById(id :Int) = dao.getTodoById(id = id  )
 
-    suspend fun getAllTodos():Flow<List<Todo>> = dao.getAllTodos()
+    suspend fun getAllTodos():List<Todo> = dao.getAllTodos()
 
 
 }
