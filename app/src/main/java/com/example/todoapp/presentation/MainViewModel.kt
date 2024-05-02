@@ -23,9 +23,8 @@ class MainViewModel @Inject constructor(
         private set
 
     val allTodos: Flow<List<Todo>> = flow {
-        repository.getAllTodos().collect{
-         emit(it)
-    } }
+        repository.getAllTodos()
+     }
 
     private var deletedTodos : Todo ? = null
 
