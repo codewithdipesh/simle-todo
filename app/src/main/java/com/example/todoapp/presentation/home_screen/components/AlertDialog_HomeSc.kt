@@ -41,6 +41,7 @@ import com.example.todoapp.data.TodoDao
 import com.example.todoapp.data.repository.TodoRepository
 import com.example.todoapp.domain.model.Todo
 import com.example.todoapp.presentation.MainViewModel
+import com.example.todoapp.presentation.common.taskTextStyle
 import com.example.todoapp.presentation.common.toastMsg
 import com.example.todoapp.ui.theme.TodoAppTheme
 import kotlinx.coroutines.job
@@ -116,7 +117,8 @@ fun AlertDialog_HomeSc(
                                          imageVector = Icons.Rounded.Clear,
                                          contentDescription = null)
                                  }
-                             }
+                             },
+                             textStyle = taskTextStyle
                          )
 
                        Row (
